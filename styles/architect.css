@@ -8,6 +8,7 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+
 .text-light-gray {
     color: #727272;
 }
@@ -77,7 +78,7 @@ nav li a {
 
 
 /* main styles */
-main {
+main{
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -121,16 +122,44 @@ main {
     gap: 100px;
 }
 
-.features .section-title{
+.features .section-title {
     border-left: 5px solid #ff900e;
     padding-left: 20px;
 }
+
 .feature-content .card {
     padding: 30px;
     margin-bottom: 20px;
     border-radius: 8px;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.feature-img img {
+    height: 80%;
+    margin-left: 90px;
+}
+
+.ten-years-badge {
+    border-radius: 8px;
+    background: #ff900e;
+    color: #FFF;
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+
+}
+
+.ten-years-badge h2 {
+    font-size: 4rem;
+    margin: 0;
+
+}
+
+.ten-years-badge p {
+    font-size: 1.5rem;
 }
 
 /* facts section style */
@@ -178,6 +207,26 @@ main {
 }
 
 
+/* footer section */
+footer{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+footer {
+    border-radius: 8px;
+    background: #FFF4E7;
+    margin-top: 130px;
+    margin-bottom: 216px;
+}
+
+.footer-text{
+    text-align: center;
+    padding: 39px 410px;
+
+}
+
+
 /* responsive media quearies */
 /* mobile devices */
 @media screen and (max-width:576px) {
@@ -187,9 +236,21 @@ main {
 
     nav,
     .teams-container,
+    .features,
     .facts-card-container,
-    .sponsors-img-container {
+    .sponsors-img-container
+     {
         flex-direction: column;
+    }
+
+    .feature-img img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .ten-years-badge {
+        position: static;
+        max-width: 300px;
     }
 
     .teams-img-container {
@@ -206,6 +267,14 @@ main {
     .facts-card-container {
         gap: 20px;
     }
+    footer{
+        max-width: 576px;
+        margin: 0 auto;
+    }
+    .footer-text{
+        margin-top: 20px;
+        padding: 0;
+    }
 }
 
 /* tablet or medium devices */
@@ -215,8 +284,18 @@ main {
     }
 
     nav,
+    .features,
     .teams-container,
     .sponsors-img-container {
         flex-direction: column;
     }
+    footer{
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .footer-text{
+        margin-top: 20px;
+        padding: 0;
+    }
+
 }
